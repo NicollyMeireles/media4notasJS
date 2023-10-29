@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MEDIA</title>
+</head>
+<body>
+    <script>
+
+  var nota1 = prompt('Digite sua primeira nota...');
+  var nota2 = prompt('Digite sua segunda nota...');
+  var nota3 = prompt('Digite sua terceira nota...');
+  var nota4 = prompt('Digite sua quarta nota...');
+  var somaNotas = (Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4));
+
+  mediaNotas = (Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4)) / 4;
+
+  if (somaNotas < 0 || somaNotas > 40) {
+    alert('Verifique as notas que foram colocadas.');
+}
+
+  else if (mediaNotas < 6) {
+    alert('Reprovado!');
+}
+
+  else if (mediaNotas >= 6) {
+    alert('Aprovado!');
+} 
+
+  alert(`A média entre as suas notas foi: ${mediaNotas}`)
+    </script>
+</body>
+</html>
